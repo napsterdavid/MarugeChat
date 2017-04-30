@@ -7,6 +7,11 @@ import java.util.List;
  * Created by Jefferson David on 30/04/2017.
  */
 public abstract class genericMessagem <T> extends SQLiteOpenHelper {
+
+
+
+
+
         private static final String BD = "MarugeChat";
         private static final int Vbd = 1;
         private String sqlCreateMessagem = "CREATE TABLE IF NOT EXISTS messagem(" +
@@ -16,6 +21,9 @@ public abstract class genericMessagem <T> extends SQLiteOpenHelper {
                 "titulo VARCHAR(40) NOT NULL," +
                 "PRIMARY KEY(idmessagem)"+
                 ");";
+
+
+
         public genericMessagem(Context context) {
             super(context, BD, null, Vbd);
         }

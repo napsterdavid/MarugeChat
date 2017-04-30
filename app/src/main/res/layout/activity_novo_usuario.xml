@@ -31,18 +31,9 @@
         android:layout_height="wrap_content"
         android:text="Cadastrar"
         android:id="@+id/btnCadastrar"/>
-
-
-
-    <Button
+   <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cancelar"
         android:id="@+id/btnCancelar"/>
-
-
-
-
-
-
 </LinearLayout>
