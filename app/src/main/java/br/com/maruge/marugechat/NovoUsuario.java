@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import br.com.maruge.marugechat.UsuarioDAO;
+import br.com.maruge.marugechat.Usuario;
+
+
+
 
 public class NovoUsuario extends AppCompatActivity {
 
@@ -39,7 +44,7 @@ public class NovoUsuario extends AppCompatActivity {
                 Usuario usuario = new Usuario();
                 usuario.setNome(Nome.getText().toString());
                 usuario.setNome(Senha.getText().toString());
-                UsuarioDAO.salvar(usuario);
+                UsuarioDAO.salva(usuario);
                 Nome.setText("");
                 Senha.setText("");
                 Toast.makeText(NovoUsuario.this, "Usuário Salvo com Sucesso!",
