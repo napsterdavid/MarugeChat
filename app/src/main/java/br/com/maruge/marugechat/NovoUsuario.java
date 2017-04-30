@@ -33,8 +33,6 @@ public class NovoUsuario extends AppCompatActivity {
         Button btnCadastrar = (Button)findViewById(R.id.btnCadastrar);
         Button btnCancelar = (Button)findViewById(R.id.btnCancelar);
         Button btnListar = (Button) findViewById(R.id.btnListar);
-
-
      //   edtNovoUsuario = (EditText)findViewById(R.id.edtNovoUsuario);
       //  edtNovaSenha = (EditText)findViewById(R.id.edtNovaSenha);
      //   btnCadastrar = (Button)findViewById(R.id.btnCadastrar);

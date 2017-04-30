@@ -44,6 +44,7 @@ public class UsuarioDAO extends genericUsuario <Usuario> {
         int indiceColunaId = cursor.getColumnIndex("iduser");
         int indiceColunaNome = cursor.getColumnIndex("nome");
         int indiceColunaSenha = cursor.getColumnIndex("senha");
+
         do{
             Usuario usuario = new Usuario();
             usuario.setId(cursor.getInt(indiceColunaId));
@@ -64,15 +65,6 @@ public class UsuarioDAO extends genericUsuario <Usuario> {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
-
-
-
-
-
-
-
-
-
 
 
 
