@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText EdtUsuario,EdtSenha;
-    Button btnlogar;
+    Button btnlogar,btnteste;
     TextView txtNovoUsuario;
 
     @Override
@@ -23,6 +23,42 @@ public class MainActivity extends AppCompatActivity {
         EdtSenha = (EditText)findViewById(R.id.EdtSenha);
         btnlogar = (Button)findViewById(R.id.btnlogar);
         txtNovoUsuario = (TextView)findViewById(R.id.txtNovoUsuario);
+        btnteste =(Button)findViewById(R.id.btnteste);
+        Button nomeParaOBotao = (Button) findViewById(R.id.nomeDoBotao);
+
+
+        nomeParaOBotao.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(MainActivity.this, novoCadastro.class);
+                startActivity(it);
+            }
+        });
+
+
+
+
+        btnteste.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent novoUsuario = new Intent(MainActivity.this, TelaNovoUsuario.class);
+                startActivity(novoUsuario);
+            }
+
+        });
+
+        /*
+
+        txtNovoUsuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TelaNovoUsuario.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
         txtNovoUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent novoUsuario = new Intent(MainActivity.this, TelaNovoUsuario.class);
                 startActivity(novoUsuario);
             }
+
         });
+
+*/
+
 
 
 
