@@ -1,6 +1,7 @@
 package br.com.maruge.marugechat;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,7 +31,9 @@ public class NovoUsuario extends AppCompatActivity {
         final EditText Nome = (EditText) findViewById(R.id.edtNovoUsuario);
         final EditText Senha = (EditText) findViewById(R.id.edtNovaSenha);
         Button btnCadastrar = (Button)findViewById(R.id.btnCadastrar);
-               Button btnCancelar = (Button)findViewById(R.id.btnCancelar);
+        Button btnCancelar = (Button)findViewById(R.id.btnCancelar);
+        Button btnListar = (Button) findViewById(R.id.btnListar);
+
 
      //   edtNovoUsuario = (EditText)findViewById(R.id.edtNovoUsuario);
       //  edtNovaSenha = (EditText)findViewById(R.id.edtNovaSenha);
@@ -43,7 +46,7 @@ public class NovoUsuario extends AppCompatActivity {
                 UsuarioDAO usuarioDAO = new UsuarioDAO(NovoUsuario.this);
                 Usuario usuario = new Usuario();
                 usuario.setNome(Nome.getText().toString());
-                usuario.setNome(Senha.getText().toString());
+                usuario.setSenha(Senha.getText().toString());
                 UsuarioDAO.salva(usuario);
                 Nome.setText("");
                 Senha.setText("");
@@ -51,5 +54,18 @@ public class NovoUsuario extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }
         });
+
+
+
+        btnListar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NovoUsuario.this, ListaUsuario.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 }

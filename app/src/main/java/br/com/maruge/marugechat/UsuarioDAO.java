@@ -20,13 +20,22 @@ public class UsuarioDAO extends genericUsuario <Usuario> {
     }
 
     @Override
-    public boolean salvar(Usuario usuario) {
+    public  boolean salvar(Usuario usuario) {
 
         database.execSQL("INSERT INTO user (nome, senha) " +
                 "VALUES ('"+usuario.getNome()+"'," +
                 "'"+usuario.getSenha()+"')");
         return false;
     }
+
+    public static boolean salva(Usuario usuario) {
+        database.execSQL("INSERT INTO user (nome, senha) " +
+                "VALUES ('"+usuario.getNome()+"'," +
+                "'"+usuario.getSenha()+"')");
+        return false;
+
+    }
+
     @Override
     public List<Usuario> listar() {
         List<Usuario> usuarios = new ArrayList<>();
@@ -51,19 +60,12 @@ public class UsuarioDAO extends genericUsuario <Usuario> {
 
     }
 
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
 
-    public static boolean salva(Usuario usuario) {
-        database.execSQL("INSERT INTO user (nome, senha) " +
-                "VALUES ('"+usuario.getNome()+"'," +
-                "'"+usuario.getSenha()+"')");
-        return false;
 
-    }
 
 
 
