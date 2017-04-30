@@ -7,6 +7,9 @@
     android:orientation="vertical"
     tools:context="br.com.maruge.marugechat.MainActivity"
     android:weightSum="1">
+
+
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
@@ -31,20 +34,19 @@
     android:layout_width="match_parent"
     android:layout_height="69dp"
     android:text="Logar"
+    android:id="@+id/btnlogar"
 
 
     />
-
-
-
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Criar Nova Conta ! "
-   android:textSize="16dp"
+         android:textSize="16dp"
         android:layout_gravity="center"
        android:layout_marginTop="15dp"
+        android:id="@+id/txtNovoUsuario"
 
 
 
