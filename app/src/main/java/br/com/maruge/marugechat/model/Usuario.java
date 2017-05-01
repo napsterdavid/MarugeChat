@@ -1,10 +1,11 @@
-package br.com.maruge.marugechat;
+package br.com.maruge.marugechat.model;
 
 /**
  * Created by Jefferson David on 30/04/2017.
  */
 
 public class Usuario {
+
     private int id;
     private String nome;
     private String senha;
@@ -37,8 +38,4 @@ public class Usuario {
     public String toString() {
         return this.nome;
     }
-
-
-
-
 }

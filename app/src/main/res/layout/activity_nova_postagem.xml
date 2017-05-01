@@ -4,33 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nome:"
-        />
+    android:orientation="vertical"
+    android:weightSum="1">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edtNome"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Senha:"
+        android:layout_marginTop="15dp"
+        android:hint="Titulo"
+        android:id="@+id/EdtTitulo"
         />
     <EditText
+        android:id="@+id/editMessagem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edtSenha"/>
+        android:inputType="textMultiLine"
+        android:hint="Messagem"
+        android:layout_marginTop="10dp"
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salvar"
-        android:id="@+id/btnSalvar"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Listar"
-        android:id="@+id/btnListar"/>
+        android:id="@+id/btnSalvarMessagem"/>
 </LinearLayout>
