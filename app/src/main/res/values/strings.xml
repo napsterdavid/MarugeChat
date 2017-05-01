@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MarugeChat</string>
-    <string name="title_activity_main">MarugeChat</string>
+    <string name="title_activity_postagens">Postagens</string>
+    <string name="title_activity_novo_usuario">NovoUsuario</string>
 </resources>

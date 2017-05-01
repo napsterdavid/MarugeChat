@@ -1,12 +1,9 @@
 package br.com.maruge.marugechat.model;
-
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * Created by Jefferson David on 30/04/2017.
  */
