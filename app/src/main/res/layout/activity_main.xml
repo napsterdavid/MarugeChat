@@ -1,51 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="br.com.maruge.marugechat.MainActivity">
+
+    >
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="170dp"
-        android:layout_height="130dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:src="@mipmap/logo" />
-
-    <EditText
-        android:id="@+id/UsuarioLogin"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome de Usuário"
-        android:ems="10"
-        android:layout_marginTop="30dp"
-        />
+        android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/SenhaLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Senha"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:layout_marginTop="10dp"
-        />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/logo" />
 
-    <Button
-        android:id="@+id/btnLogar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Logar"
-        />
+        <EditText
+            android:id="@+id/UsuarioLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome de Usuário"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/SenhaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnLogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Criar Nova Conta ! "
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/txtNovoUsuario"
+            />
+
+        <Button
+            android:id="@+id/btnNovoUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Novo Usuário"
+            android:layout_marginTop="40dp"
+            />
+        <Button
+            android:id="@+id/btnNovaPostagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nova Postagem"
+            />
+        <Button
+            android:id="@+id/btnPostagens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Postagens"
+            />
 
 
-
-
-
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
