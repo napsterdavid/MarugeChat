@@ -6,6 +6,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.maruge.marugechat.model.model.UsuarioDAO;
+
 /**
  * Created by Jefferson David on 30/04/2017.
  */

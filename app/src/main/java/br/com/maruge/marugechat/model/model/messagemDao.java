@@ -1,13 +1,17 @@
-package br.com.maruge.marugechat;
+package br.com.maruge.marugechat.model.model;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.maruge.marugechat.Messagem;
+import br.com.maruge.marugechat.model.model.genericMessagem;
+
 /**
  * Created by Jefferson David on 30/04/2017.
  */
-public abstract class messagemDao extends genericMessagem <Messagem>{
+public abstract class messagemDao extends genericMessagem<Messagem> {
     private SQLiteDatabase database;
     public messagemDao(Context context){
         super(context);
