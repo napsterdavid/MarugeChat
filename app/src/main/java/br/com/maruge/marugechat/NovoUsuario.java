@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import br.com.maruge.marugechat.model.Usuario;
@@ -21,12 +22,10 @@ public class NovoUsuario extends AppCompatActivity {
         final EditText tvSenha = (EditText) findViewById(R.id.edtSenha);
         Button btnSalvar = (Button) findViewById(R.id.btnSalvar);
         Button btnListar = (Button) findViewById(R.id.btnListar);
+
         btnSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
                 UsuarioDAO usuarioDAO = new UsuarioDAO(NovoUsuario.this);
                 Usuario usuario = new Usuario();
                 usuario.setNome(tvNome.getText().toString());
