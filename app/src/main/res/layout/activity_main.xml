@@ -9,8 +9,8 @@
         android:orientation="vertical" >
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="170dp"
-            android:layout_height="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:src="@mipmap/logo" />
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:hint="Nome de Usuário"
             android:ems="10"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             />
         <EditText
             android:id="@+id/SenhaLogin"
@@ -35,29 +35,20 @@
             android:id="@+id/btnLogar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#08d130"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
             android:text="Logar"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Criar Nova Conta ! "
-            android:textSize="16dp"
+            android:text="CRIAR UMA CONTA ! "
+            android:textSize="20dp"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:id="@+id/txtNovoUsuario"
-            />
-
-        <Button
-            android:id="@+id/btnNovaPostagem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nova Postagem"
-            />
-        <Button
-            android:id="@+id/btnPostagens"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Postagens"
             />
     </LinearLayout>
 </ScrollView>

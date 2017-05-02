@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Postagens" />
         <activity android:name=".NovaPostagem" />
-        <activity android:name=".NovoUsuario"></activity>
+        <activity android:name=".NovoUsuario" />
+        <activity android:name=".menu_adm"></activity>
     </application>
 
 </manifest>
